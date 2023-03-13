@@ -1,0 +1,67 @@
+body {
+    margin: 50px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+h1 {
+    /* text-align: center; */
+    margin-top: 55px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+span {
+    color: #17972c
+}
+
+.links-style {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 1.1rem;
+    padding: 20px 3px 20px 30px;
+    background-color: #17972c;
+}
+
+.link-color-about {
+    color: white;
+    text-decoration: none;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.location-name {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.location-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.input-home {
+    margin: 10px;
+    padding: 2px;
+    width: 300px;
+    height: 25px
+}
+
+.card:hover {
+    background: whitesmoke;
+}
+
+.card {
+    margin: 20px;
+    padding: 10px 0;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .03);
+    background: #FFF;
+    border-radius: 10px;
+}
