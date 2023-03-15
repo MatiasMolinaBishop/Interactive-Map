@@ -5,6 +5,7 @@ const Form = (props) => {
     let img = props.img
     let city = props.city
     let company = props.name
+    let id = props.id
 
     const [formData, setFormData] = useState({
         name:'',
@@ -12,7 +13,8 @@ const Form = (props) => {
         email:'',
         img:img,
         city: city,
-        company: company
+        company: company,
+        id:id
     })
 
     const handleChange = (e) => {

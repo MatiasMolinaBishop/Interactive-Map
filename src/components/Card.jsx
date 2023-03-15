@@ -25,6 +25,7 @@ const Card = (props) => {
             <img className='location-img' src={props.location.img} alt="location" />
             <p>City: {props.location.city}</p>
             <h2>Available Spaces: {props.location.spaces}</h2>
+            <p>Square Meters: {props.location.sqm}</p>
             <button onClick={modalHandler}>See More</button>
             {isOpen && 
                 <div style={BUTTON_WRAPPER_STYLES}>

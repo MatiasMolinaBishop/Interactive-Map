@@ -156,6 +156,39 @@ button:hover {
     gap: 25px;
 }
 
+.info-card-img {
+    width: 200px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    align-content: flex-start;
+    margin: 20px;
+    padding: 10px 20px 0 20px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .03);
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.search-flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info-landing-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 30PX 160px;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* MAP */
 
 /* PROFILE */
