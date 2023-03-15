@@ -4,18 +4,15 @@ import { useState } from 'react';
 import Card from '../components/Card';
 
 
-const Home = () => {
+const Home = (props) => {
 
     const [locationsSpain, setLocationsSpain] = useState(locations)
-    // const [seeMore, setSeeMore] = useState(false)
 
     const filterCity = (search) => {
         let searchedLocations = locationsSpain.filter((location) => {
             return location.city.toLowerCase().includes(search)
         })
-
         setLocationsSpain(searchedLocations)
-
     }
 
     return (
@@ -26,7 +23,7 @@ const Home = () => {
             {locationsSpain.map((location) => {
                 return(
                     <div>
-                        <Card location={location}/>
+                        <Card location={location} onAdd={props.onAdd}/>
                     </div> 
                 )
             })}

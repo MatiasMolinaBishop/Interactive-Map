@@ -4,6 +4,7 @@ export const locations = [
         city: 'Barcelona',
         id: 1,
         spaces: 5,
+        sqm: 2,
         img: 'https://images.unsplash.com/photo-1586528116022-aeda1613c63d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80'
 
     },

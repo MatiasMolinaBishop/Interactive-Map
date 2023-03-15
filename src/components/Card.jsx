@@ -1,10 +1,23 @@
-
 import { useState } from 'react';
 import Modal from './Modal';
+import Form from './Form';
+
+const BUTTON_WRAPPER_STYLES = {
+    position: 'relative',
+    zIndex: 1
+  }
 
 const Card = (props) => {
+  
+      const [isOpen, setIsOpen] = useState(false)
+
+      const modalHandler = (evetn) => {
+        setIsOpen(true)
+      }
     
-    const [seeMore, setSeeMore] = useState(false)
+      const modalClose = (event) => {
+        setIsOpen(false)
+      }
 
     return (
         <div key={props.location._id} className="card">
@@ -12,8 +25,16 @@ const Card = (props) => {
             <img className='location-img' src={props.location.img} alt="location" />
             <p>City: {props.location.city}</p>
             <h2>Available Spaces: {props.location.spaces}</h2>
-            <button onClick = {() => setSeeMore(true)}>See More</button>
-            {seeMore && <Modal/>}
+            <button onClick={modalHandler}>See More</button>
+            {isOpen && 
+                <div style={BUTTON_WRAPPER_STYLES}>
+                    <div>
+                        <Modal open={isOpen} onClose={modalClose} onAdd={props.onAdd}>
+                            <Form img={props.location.img} name={props.location.name} city={props.location.city} onClose={modalClose}  onAdd={props.onAdd}/>
+                        </Modal>
+                    </div>
+                </div>
+            }
         </div>  
     )
 }
