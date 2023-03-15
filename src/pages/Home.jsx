@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import LandingInfoCard from '../components/LandingInfoCard';
 
 
+
 const Home = (props) => {
 
     const [locationsSpain, setLocationsSpain] = useState(locations)

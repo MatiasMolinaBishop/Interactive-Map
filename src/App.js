@@ -1,6 +1,5 @@
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
-import MapComponent from './pages/Map';
 import Profile from './pages/Profile';
 import Mapa from './pages/Mapa';
 
@@ -34,8 +33,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home onAdd={onAdd} />} />
-        <Route path="/map" element={<MapComponent />} />
-        <Route path="/mapa" element={<Mapa />} />
+        <Route path="/map" element={<Mapa />} />
         <Route path="/profile" element={<Profile submitted={submitted} count={count} onDelete={onDelete} />} />
       </Routes>
     </div>

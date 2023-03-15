@@ -8,7 +8,7 @@ h1 {
     /* text-align: center; */
     margin-top: 55px;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 5px;
 }
 
@@ -28,6 +28,11 @@ span {
 .link-color-about {
     color: white;
     text-decoration: none;
+}
+
+.link-color-about:hover {
+    color: rgba(255, 255, 255, 0.583);
+
 }
 
 .locations-grid {
@@ -216,5 +221,30 @@ button:hover {
     margin-bottom: 20px;
     margin-left: 300px;
     margin-right: 200px;
+
+}
+
+.leaflet-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.map-link {
+    background-color: #17972c;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.map-link:hover {
+    background-color: #62ba65;
+    color: black;
 
 }
