@@ -26,7 +26,7 @@ const Card = (props) => {
             <p>City: {props.location.city}</p>
             <h2>Available Spaces: {props.location.spaces}</h2>
             <p>Square Meters: {props.location.sqm}</p>
-            <button onClick={modalHandler}>See More</button>
+            <button onClick={modalHandler}>Request Information</button>
       
             {isOpen && 
                 <div style={BUTTON_WRAPPER_STYLES}>

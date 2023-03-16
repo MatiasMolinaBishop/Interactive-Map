@@ -194,8 +194,6 @@ button:hover {
 
 }
 
-/* MAP */
-
 /* PROFILE */
 
 .bar-chart {
@@ -223,6 +221,8 @@ button:hover {
     margin-right: 200px;
 
 }
+
+/* MAP */
 
 .leaflet-container {
     width: 100vw;

@@ -21,7 +21,7 @@ const Mapa = () => {
                         <Popup position={[location.latitude, location.longitude]}>
                             <div>
                                 <h3>Cpany Name: {location.name}</h3>
-                                <p>Suare meters: {location.sqm}</p>
+                                <p>Square meters: {location.sqm}</p>
                                 <p>Available Spaces: {location.spaces}</p>
                                 <p>City: {location.city}</p>
                                 <img className = 'profile-img' src={location.img} alt='warehouseview'/>
