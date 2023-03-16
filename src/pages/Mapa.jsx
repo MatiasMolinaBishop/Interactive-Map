@@ -1,8 +1,9 @@
-import { MapContainer, TileLayer, useMap, Marker, Popup} from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 import { locations } from '../locationObj';
 import Modal from '../components/Modal';
+import { Link } from "react-router-dom";
 
-const Mapa = () => {
+const Mapa = (props) => {
 
     console.log(locations)
     return (
@@ -24,6 +25,7 @@ const Mapa = () => {
                                 <p>Square meters: {location.sqm}</p>
                                 <p>Available Spaces: {location.spaces}</p>
                                 <p>City: {location.city}</p>
+                                <Link className="link-color-about" to='/'>Go back to request information </Link>
                                 <img className = 'profile-img' src={location.img} alt='warehouseview'/>
                                 <Modal/>
                             </div>

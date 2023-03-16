@@ -33,7 +33,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home onAdd={onAdd} />} />
-        <Route path="/map" element={<Mapa />} />
+        <Route path="/map" element={<Mapa onAdd={onAdd} />} />
         <Route path="/profile" element={<Profile submitted={submitted} count={count} onDelete={onDelete} />} />
       </Routes>
     </div>
